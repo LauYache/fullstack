@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    const buttonContraste = document.getElementById('contraste')
+document.addEventListener('DOMContentLoaded', ()=> {
+    const body = document.getElementsByName('body');
+    const buttonContraste = document.getElementById('contraste');
     const formulario = document.getElementById('formulario');
     const botonEnviar = document.getElementById('enviar');
     let modoContraste = false;
@@ -22,30 +23,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
      
         if (modoContraste){
             formulario.className = 'original';
+         
             modoContraste = false;
             buttonContraste.textContent = 'Cambiar a original';
 
         } else {
             buttonContraste.textContent = 'Cambiar a contraste';
             formulario.className = 'contraste';
+          
             modoContraste = true;
         }
     });
 
 });
 
-function emptyAlert(input) {
-    if (input === '') {  
+function emptyAlert(valor) {
+    if (valor == null || valor.length == 0 || /^\s+$/.test(valor)) {  
         alert(`Por favor ingrese un valor`);
-       return true;
+       return false;
+    }else{
+        return true;
     }
 }  
 
+
 function validarFormulario(nombre, apellido, nacimiento, mail){
-    if(!emptyAlert(nombre) &&
-    !emptyAlert(apellido) &&
-    !emptyAlert(nacimiento) &&
-    !emptyAlert(mail)
+    if(emptyAlert(nombre) &&
+    emptyAlert(apellido) &&
+    emptyAlert(nacimiento) &&
+    emptyAlert(mail)
 ){
     alert(`Formulario enviado con exito`);
 
