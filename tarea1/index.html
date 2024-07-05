@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Formulario</title>   
+</head>
+
+<header>Tarea 1: Formulario con validacion y contraste</header>
+<body>
+    
+    <main>
+
+        <form class="original" id="formulario" method="post" action="">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input placeholder="Tu nombre" type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+            <label for="apellido">Apellido:</label>
+            <input placeholder="Tu apellido" type="text" name="apellido" id="apellido">
+            </div>
+
+            <div>
+            <label for="mail">Mail:</label>
+            <input placeholder="ejemplo@mail.com" type="text" name="mail" id="mail">
+            </div>
+
+            <div>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input placeholder="Tu fecha de nacimiento" type="date" name="nacimiento" id="nacimiento">
+            </div>
+                <div>
+            <input type="submit" value="Enviar" id="enviar">
+                </div>
+        </form>
+
+        <div >
+            <button id="contraste" >Cambiar a contraste</button>
+        </div>
+
+        
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
