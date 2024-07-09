@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    const body = document.getElementsByName('body');
+    const body = document.body;
     const buttonContraste = document.getElementById('contraste');
     const formulario = document.getElementById('formulario');
     const botonEnviar = document.getElementById('enviar');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     botonEnviar.addEventListener('click', () => {
         const nombre = document.getElementById('nombre').value;
-        const apellido = document.getElementById('apellido');
+        const apellido = document.getElementById('apellido').value;
         const nacimiento = document.getElementById('nacimiento').value;
         const mail = document.getElementById("mail").value;
         const constraste = document.getElementById('contraste').value;
@@ -39,11 +39,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 function emptyAlert(valor) {
     if (valor == null || valor.length == 0 || /^\s+$/.test(valor)) {  
-        alert(`Por favor ingrese un valor`);
+        alert(`Por favor ingrese un valor valido`);
        return false;
     }else{
         return true;
     }
+
+
 }  
 
 

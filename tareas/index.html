@@ -7,30 +7,35 @@
     <title>Formulario</title>   
 </head>
 
-<header>Tarea 1: Formulario con validacion y contraste</header>
+
 <body >
-    
+    <header>
+        <title>Curso fullstack</title>
+    </header>
+
+    <h1>Tareas del curso</h1>
+    <h2>Tarea 1: Formulario con validacion y contraste</h2>
     <main>
 
-        <form class="original" id="formulario" method="post" action="">
+        <form class="original" id="formulario" method="post" action="" required="">
             <div>
                 <label for="nombre">Nombre:</label>
-                <input placeholder="Tu nombre" type="text" name="nombre" id="nombre">
+                <input placeholder="Tu nombre" type="text" name="nombre" id="nombre" required="">
             </div>
 
             <div>
             <label for="apellido">Apellido:</label>
-            <input placeholder="Tu apellido" type="text" name="apellido" id="apellido">
+            <input placeholder="Tu apellido" type="text" name="apellido" id="apellido" required="">
             </div>
 
             <div>
             <label for="mail">Mail:</label>
-            <input placeholder="ejemplo@mail.com" type="text" name="mail" id="mail">
+            <input placeholder="ejemplo@mail.com" type="text" name="mail" id="mail" required="">
             </div>
 
             <div>
             <label for="nacimiento">Fecha de nacimiento:</label>
-            <input placeholder="Tu fecha de nacimiento" type="date" name="nacimiento" id="nacimiento">
+            <input placeholder="Tu fecha de nacimiento" type="date" name="nacimiento" id="nacimiento" required="">
             </div>
                 <div>
             <input type="submit" value="Enviar" id="enviar">
@@ -46,5 +51,9 @@
     </main>
 
     <script src="scripts/script.js"></script>
+
+    <footer>
+        <p>Lali® 2024</p>
+    </footer>
 </body>
 </html>
