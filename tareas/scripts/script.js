@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     buttonContraste.addEventListener('click', () => {
      
-        if (modoContraste){
+        if (buttonContraste.textContent === 'Cambiar a original'){
             formulario.className = 'original';
-         
-            modoContraste = false;
-            buttonContraste.textContent = 'Cambiar a original';
+            body.className  = 'original';
+            //modoContraste = false;
+            buttonContraste.textContent = 'Cambiar a contraste';
 
         } else {
-            buttonContraste.textContent = 'Cambiar a contraste';
+            buttonContraste.textContent = 'Cambiar a original';
             formulario.className = 'contraste';
-          
+            body.className  = 'contraste';
             modoContraste = true;
         }
     });
