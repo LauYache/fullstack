@@ -1,0 +1,73 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+header h1{
+    visibility: hidden;
+}
+
+.form h2{
+    color: gray;
+}
+
+.card{
+    width: 30rem;
+}
+
+.card-contraste{
+ background-color: #212529;
+ color: white;
+ width: 30rem;
+}
+
+.contraste{
+    background-color: #212529;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#enviar{
+    width: 100px;
+}
+
+
+#contraste button{
+    border-radius: 5px;
+    height: 30px;
+}
+
+.card{
+    width: 40rem;
+   
+}
+
+.card img{
+    max-height: 300px;
+}
+
+footer{
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+footer p{
+color: rgb(150, 194, 206);
+}
+
+.card text-bg-light mx-auto p {
+    color:  gray;
+}
+
+.card text-bg-dark mx-auto p {
+
+    color:  white;
+}
+
+a.nav-link, .nav-link.active{
+    color:  gray;
+}
+
